@@ -1,7 +1,1 @@
-{"versions": [{"versiontype": "proofreading",
-		"title": "Metathesis and unmetathesis in Amarasi",
-		"authors": [{"name": "Owen Edwards"}],
-	"license": "CC-BY-4.0",
-	"publishedAt": "2019-10-30T18:11:13.000Z"}
-	]
-}
+{"versions": [{"authors": [{"name": "Owen Edwards"}], "title": "Metathesis and unmetathesis in Amarasi", "publishedAt": "2019-10-30T18:11:13.000Z", "license": "CC-BY-4.0", "versiontype": "proofreading"}, {"title": "Metathesis and unmetathesis in Amarasi", "versiontype": "first_edition", "license": "CC-BY-4.0", "publishedAt": "2020-03-11T14:06:19.246693", "authors": [{"name": "Owen Edwards"}]}]}
