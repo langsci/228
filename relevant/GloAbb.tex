@@ -4,99 +4,83 @@
 
 \newcommand{\shiftleft}[2]{\makebox[0pt][r]{\makebox[#1][l]{#2}}}
 
+%%%%%%%%%%%%%%%%
+%% Metathesis %%
+%%%%%%%%%%%%%%%%
+
 \newcommand{\M}{{\textbackslash}\tsc{m}}
 \newcommand{\Mv}{{\textbackslash}\tsc{m\shiftleft{0.8pt}{̿}}}
 \newcommand{\Mvv}{\tsc{m\shiftleft{0.8pt}{̿}}}
 \newcommand{\Mc}{{\textbackslash}\tsc{m\shiftleft{0.25pt}{\raisebox{-4pt}{\scalebox{1.75}{ͨ}}}}}
 \newcommand{\MC}{M\shiftleft{1.2pt}{\raisebox{-3pt}{\scalebox{1.75}{ͨ}}}}
 \newcommand{\tbrM}{{\textbackslash}\tbr{\tsc{m}}}
-\newcommand{\tbrMv}{{\textbackslash}\tsc{\tbr{m}\shiftleft{1.5pt}{\textcolor{DarkRed}{̿}}}}
-\newcommand{\tbrMc}{{\textbackslash}\tsc{\tbr{m}\shiftleft{0.8pt}{\raisebox{-4pt}{\scalebox{1.75}{\textcolor{DarkRed}{ͨ}}}}}}
-	%\nomenclature[G]{\tsc{m}}{M-form (metathesised)}
-	%\nomenclature[G]{\tsc{mͨ}}{M-form before consonant \\ cluster}
-	%\nomenclature[G]{\tsc{m̿}}{M-form before vowel initial \\ enclitic}
+\newcommand{\tbrMv}{{\textbackslash}\tsc{\tbr{m}\shiftleft{1.5pt}{̿}}}
+\newcommand{\tbrMc}{{\textbackslash}\tsc{\tbr{m}\shiftleft{0.8pt}{\raisebox{-4pt}{\scalebox{1.75}{ͨ}}}}}
 \renewcommand{\U}{{\textbackslash}\tsc{u}}
-	%\nomenclature[G]{\tsc{u}}{U-form (unmetathesised)}
-	%\nomenclature[G]{\tsc{uͨ}}{U-form of consonant final stem and U-form before consonant cluster}
 \newcommand{\Uc}{{\textbackslash}\tsc{u\raisebox{-4pt}{\scalebox{1.75}{ͨ}}}}
 \newcommand{\Ucc}{\tsc{u\raisebox{-4pt}{\scalebox{1.75}{ͨ}}}}
 \newcommand{\tbrU}{{\textbackslash}\tbr{\tsc{u}}}
-\newcommand{\tbrUc}{{\textbackslash}\tsc{\tbr{u}\raisebox{-4pt}{\scalebox{1.75}{\textcolor{DarkRed}{ͨ}}}}}
+\newcommand{\tbrUc}{{\textbackslash}\tsc{\tbr{u}\raisebox{-4pt}{\scalebox{1.75}{ͨ}}}}
 
 %%%%%%%%%%%%%%%%%%%
 %% Free Pronouns %%
 %%%%%%%%%%%%%%%%%%%
 
 \newcommand{\au}{\tsc{1sg}}					% au
-	%\nomenclature[G]{1}{1\su{st} person}
-	%\nomenclature[G]{\tsc{sg}}{singular}
-\newcommand{\kau}{\tsc{1sg.acc}}		% kau
-	%\nomenclature[G]{\tsc{acc}}{accusative}
-\newcommand{\hoo}{\tsc{2sg}}						% ho
-\newcommand{\koo}{\tsc{2sg.acc}}			% ko
-	%\nomenclature[G]{2}{2\su{nd} person}
-\newcommand{\iin}{\tsc{3sg}}					% in
-	%\nomenclature[G]{3}{3\su{rd} person}
-\newcommand{\eeV}{\tsc{3sg.acc}}				%	e
-\newcommand{\hiit}{\tsc{1pi}}				% hit
-	%\nomenclature[G]{\tsc{pi}}{plural inclusive}
-\newcommand{\kiit}{\tsc{1pi.acc}}		% kit
+\newcommand{\kau}{\tsc{1sg.acc}}		% =kau
+\newcommand{\hoo}{\tsc{2sg}}				% hoo
+\newcommand{\koo}{\tsc{2sg.acc}}		% =koo
+\newcommand{\iin}{\tsc{3sg}}				% iin
+\newcommand{\eeV}{\tsc{3sg.acc}}		%	=ee
+\newcommand{\hiit}{\tsc{1pi}}				% hiit
+\newcommand{\kiit}{\tsc{1pi.acc}}		% kiit
 \newcommand{\hai}{\tsc{1px}}				% hai
-	%\nomenclature[G]{\tsc{px}}{plural exclusive}
 \newcommand{\kai}{\tsc{1px.acc}}		% kai
-\newcommand{\hii}{\tsc{2pl}}					% hi
-	%\nomenclature[G]{\tsc{pl}}{plural}
-\newcommand{\kii}{\tsc{2pl.acc}}			% ki
-\newcommand{\siin}{\tsc{3pl}}			% sin (verbs)
-\newcommand{\siinN}{\tsc{assoc.pl}}	% sin (nouns)
-	%\nomenclature[G]{\tsc{assoc.pl}}{associative plural}
-\newcommand{\einV}{\tsc{pl}}				% ein, =n
+\newcommand{\hii}{\tsc{2pl}}				% hii
+\newcommand{\kii}{\tsc{2pl.acc}}		% =kii
+\newcommand{\siin}{\tsc{3pl}}				% siin (verbs)
+\newcommand{\siinN}{\tsc{assoc.pl}}	% siin (nouns)
+\newcommand{\einV}{\tsc{pl}}				% =ein, =n
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Pronominal Agreement %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\renewcommand{\k}{\tsc{3pl/1gen}}			% -k
-	%\nomenclature[G]{\tsc{gen}}{genitive}
-\newcommand{\N}{\tsc{3sg.gen}}				% -n
-\newcommand{\mg}{\tsc{1px/2gen}}			% -m
-\newcommand{\f}{\tsc{0gen}}						% -f
-	%\nomenclature[G]{0}{0 person}
-\newcommand{\F}{\tsc{gen}}						% -f (kin)
+\renewcommand{\k}{\tsc{3pl/1gen}}		% -k
+\newcommand{\N}{\tsc{3sg.gen}}			% -n
+\newcommand{\mg}{\tsc{1px/2gen}}		% -m
+\newcommand{\f}{\tsc{0gen}}					% -f
+\newcommand{\F}{\tsc{gen}}					% -f (kin)
 
-\newcommand{\qu}{\tsc{1sg}}				% u-
-\renewcommand{\mu}{\tsc{2sg}}			% mu-
-\newcommand{\mut}{\tsc{2sg{\textbackslash}tr}}			% mu-
-\newcommand{\na}{\tsc{3}}					% na-
-\newcommand{\nat}{\tsc{3{\textbackslash}tr}}			% na- (on n- verb)
-	%\nomenclature[G]{\tsc{tr}}{transitive}
-\newcommand{\ta}{\tsc{1pi}}				% ta-
+\newcommand{\qu}{\tsc{1sg}}											% u-
+%\renewcommand{\mu}{\tsc{2sg}}									% mu-
+\newcommand{\muu}{\tsc{2sg}}										% mu-
+\newcommand{\mut}{\tsc{2sg{\textbackslash}tr}}	% mu-
+\newcommand{\na}{\tsc{3}}												% na-
+\newcommand{\nat}{\tsc{3{\textbackslash}tr}}		% na- (on n- verb)
+\newcommand{\ta}{\tsc{1pi}}											% ta-
 \newcommand{\tat}{\tsc{1pi{\textbackslash}tr}}
-\newcommand{\mi}{\tsc{1px/2pl}}		% mi-
-\newcommand{\q}{\tsc{1sg}}				% ʔ-
-\newcommand{\m}{\tsc{1px/2}}		% m-
-\newcommand{\n}{\tsc{3}}					% n-
-\renewcommand{\t}{\tsc{1pi}}			% t-
-\newcommand{\tg}{\tsc{0}}					% t-, ta- 0
+\newcommand{\mi}{\tsc{1px/2pl}}									% mi-
+\newcommand{\q}{\tsc{1sg}}											% ʔ-
+\newcommand{\m}{\tsc{1px/2}}										% m-
+\newcommand{\n}{\tsc{3}}												% n-
+\renewcommand{\t}{\tsc{1pi}}										% t-
+\newcommand{\tg}{\tsc{0}}												% t-, ta- 0
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Determiners/Demonstratives %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\ii}{\tsc{1det}}				% ii
-	%\nomenclature[G]{\tsc{det}}{determiner}
 \newcommand{\aan}{\tsc{2det}}				% aan
 \newcommand{\ee}{\tsc{3det}}				% ee
 \renewcommand{\aa}{\tsc{0det}}			% aa
 \newcommand{\ein}{\tsc{pl}}					% ein
 \newcommand{\es}{one}								% es
 \newcommand{\esc}{\tsc{cop}}				% es
-	%\nomenclature[G]{\tsc{cop}}{copula}
 \newcommand{\oo}{\tsc{refl}}				% o-n
-	%\nomenclature[G]{\tsc{refl}}{reflexive}
 
-\renewcommand{\ia}{\tsc{1dem}}				% ia
-	%\nomenclature[G]{\tsc{dem}}{demonstrative}
+\renewcommand{\ia}{\tsc{1dem}}			% ia
 \newcommand{\naan}{\tsc{2dem}}			% naan
 \newcommand{\nee}{\tsc{3dem}}				% nee
 \newcommand{\naa}{\tsc{0dem}}				% naa
@@ -106,106 +90,61 @@
 %%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\bi}{\tsc{rl.loc}}			% n-bi
-\newcommand{\biqaka}{\tsc{rl.loc}}			% n-bi'aka (Ro'is)
-	%\nomenclature[G]{\tsc{loc}}{locative}
-	%\nomenclature[G]{\tsc{rl}}{realis}
-\newcommand{\et}{\tsc{ipfv.loc}}				% et, es
-\newcommand{\ek}{\tsc{loc}}				% ek (Ro'is)
-	%\nomenclature[G]{\tsc{ipfv}}{imperfective}
-\newcommand{\on}{\tsc{irr.loc}}		% on
-\newcommand{\eu}{\tsc{dat}}				% n-eu
-	%\nomenclature[G]{\tsc{dat}}{dative}
-\newcommand{\ok}{with}						% n-ok
-\newcommand{\qko}{\tsc{abl}}			% na-ʔko
-	%\nomenclature[G]{\tsc{abl}}{ablative}
+\newcommand{\biqaka}{\tsc{rl.loc}}	% n-bi'aka (Ro'is)
+\newcommand{\et}{\tsc{ipfv.loc}}		% et, es
+\newcommand{\ek}{\tsc{loc}}					% ek (Ro'is)
+\newcommand{\on}{\tsc{irr.loc}}			% on
+\newcommand{\eu}{\tsc{dat}}					% n-eu
+\newcommand{\ok}{with}							% n-ok
+\newcommand{\qko}{\tsc{abl}}				% na-ʔko
 
 %%%%%%%%%%%%%%%%%%%
 %% Other Affixes %%
 %%%%%%%%%%%%%%%%%%%
 
-\renewcommand{\a}{\hphantom{a|}}			% a-
-\newcommand{\mv}{\tsc{stat}}			% m-
-	%\nomenclature[G]{\tsc{stat}}{stative}
-\renewcommand{\b}{\tsc{tr}}			% -b
-\newcommand{\qU}{\tsc{u}}				% -ʔ
+\renewcommand{\a}{\hphantom{a|}}		% a-
+\newcommand{\mv}{\tsc{stat}}				% m-
+\renewcommand{\b}{\tsc{tr}}					% -b
+\newcommand{\qU}{\tsc{u}}						% -ʔ
 \newcommand{\qnum}{\tsc{ord}}				% -ʔ
-	%\nomenclature[G]{\tsc{ord}}{ordinal}
-\newcommand{\mak}{\tsc{recp}}		% ma-
-	%\nomenclature[G]{\tsc{recp}}{reciprocal}
-\newcommand{\ma}{\tsc{prop}}		% ma-
-	%\nomenclature[G]{\tsc{prop}}{property}
-\newcommand{\at}{\tsc{nml}}		% a-...-t
-	%\nomenclature[G]{\tsc{nml}}{nominaliser}
-\newcommand{\qq}{\tsc{nml}}		% ʔ-...-ʔ
-\newcommand{\qV}{\tsc{tr}}		% ʔ-...-ʔ
-\newcommand{\prd}{\tsc{intns}{\tl}}		% CVC-
-	%\nomenclature[G]{\tsc{intns}}{intensive}
+\newcommand{\mak}{\tsc{recp}}				% ma-
+\newcommand{\ma}{\tsc{prop}}				% ma-
+\newcommand{\at}{\tsc{nml}}					% a-...-t
+\newcommand{\qq}{\tsc{nml}}					% ʔ-...-ʔ
+\newcommand{\qV}{\tsc{tr}}					% ʔ-...-ʔ
+\newcommand{\prd}{\tsc{intns}{\tl}}	% CVC-
 \newcommand{\frd}{\tsc{frd}{\tl}}		% frd-
-	%\nomenclature[G]{\tsc{frd}}{full reduplication}
 	
 %%%%%%%%%%%%%%%%%%%%
 %% Other Functors %%
 %%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\maeq}{\tsc{neg}}				% ka=
+\newcommand{\maeq}{\tsc{neg}}			% ka=
 \newcommand{\ka}{\tsc{neg}}				% ka=
-	%\nomenclature[G]{\tsc{neg}}{negative}
 \newcommand{\fa}{\tsc{neg}}				% =fa, =f
 \newcommand{\te}{\tsc{sub}}				% =te
-	%\nomenclature[G]{\tsc{sub}}{subordinate}
-\newcommand{\een}{\tsc{incep}}			% =een
-	%\nomenclature[G]{\tsc{incep}}{inceptive}
+\newcommand{\een}{\tsc{incep}}		% =een
 \newcommand{\BI}{Ms.}							% bi
 \newcommand{\naiq}{Mr.}						% naiʔ
 \newcommand{\he}{\tsc{irr}}				% he
-	%\nomenclature[G]{\tsc{irr}}{irrealis}
-\newcommand{\ak}{\tsc{quot}}
-	%\nomenclature[G]{\tsc{quot}}{quotative}
-\newcommand{\nai}{\tsc{imp}}
-	%\nomenclature[G]{\tsc{imp}}{impertive}
+\newcommand{\ak}{\tsc{quot}}			% -ak
+\newcommand{\nai}{\tsc{imp}}			% nai
 \newcommand{\req}{\tsc{rel}}			% reʔ
-	%\nomenclature[G]{\tsc{rel}}{relativiser}
 \newcommand{\reqt}{\tsc{top}}			% reʔ
-	%\nomenclature[G]{\tsc{top}}{topic}
 \newcommand{\kaah}{\tsc{neg}}			% kah
 \newcommand{\kais}{\tsc{proh}}		% kais(aʔ)
-	%\nomenclature[G]{\tsc{proh}}{prohibitive}
-\newcommand{\manaq}{\tsc{count}}		% kais(aʔ)
-	%\nomenclature[G]{\tsc{count}}{counter}
+\newcommand{\manaq}{\tsc{count}}	% kais(aʔ)
 
 %%%%%%%%%%%%%%%%%
 %% Other Words %%
 %%%%%%%%%%%%%%%%%
 
-\newcommand{\ana}{\tsc{res}}				% ana
-	%\nomenclature[G]{\tsc{res}}{resultative}
-\newcommand{\uma}{1/{\mu}{\textbackslash}come}	% uma
-\newcommand{\ima}{{\mi}{\textbackslash}come}				% ima
-\newcommand{\nema}{{\n}{\textbackslash}come}				% nema
+\newcommand{\ana}{\tsc{res}}										% ana
+%\newcommand{\uma}{1/{\mu}{\textbackslash}come}	% uma
+\newcommand{\uma}{1/{\muu}{\textbackslash}come}	% uma
+\newcommand{\ima}{{\mi}{\textbackslash}come}		% ima
+\newcommand{\nema}{{\n}{\textbackslash}come}		% nema
 
-\newcommand{\tua}{\tsc{addr}}					% tua
-	%\nomenclature[G]{\tsc{addr}}{addressee}
-\newcommand{\aaQ}{\tsc{q}}						% aa?
-	%\nomenclature[G]{\tsc{q}}{question}
-\newcommand{\nehh}{\tsc{pause}}						% aa?
-
-%%%%%%%%%%%%%%%%%%%%
-%% Other %%	Other %%
-%%%%%%%%%%%%%%%%%%%%
-
-%\nomenclature[K]{PF}{grandfather}
-%\nomenclature[K]{PM}{grandmother}
-%\nomenclature[K]{F}{father}
-%\nomenclature[K]{M}{mother}
-%\nomenclature[K]{MB/FZ}{parent's opposite sex sibling}
-%\nomenclature[K]{eSi}{same sex elder sibling}
-%\nomenclature[K]{ySi}{same sex younger sibling}
-%\nomenclature[K]{fB}{woman's brother}
-%\nomenclature[K]{mZ}{man's sister}
-%\nomenclature[K]{DH}{daughter's husband}
-%\nomenclature[K]{SW}{son's wife}
-%\nomenclature[K]{WB/ZH}{same sex sibling of spouse, opposite sex sibling's spouse}
-%\nomenclature[K]{CC}{grandchild}
-%\nomenclature[K]{CCC}{great-grandchild}
-%\nomenclature[K]{PPP}{forefather}
-%\nomenclature[K]{PMP}{Proto-Malayo-Polynesian}
+\newcommand{\tua}{\tsc{addr}}			% tua
+\newcommand{\aaQ}{\tsc{q}}				% aa?
+\newcommand{\nehh}{\tsc{pause}}		% aa?

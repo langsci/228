@@ -2,11 +2,8 @@
 %%	Font Styles & Formatting	%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\definecolor{DarkBlue}{RGB}{0,0,130}
-\newcommand{\ve}[1]{\textcolor{DarkBlue}{\textit{#1}}}		%vernacular text, dark blue colour
-\definecolor{DarkRed}{RGB}{150,0,0}
-\newcommand{\tcr}{\textcolor{DarkRed}}	%dark red colour
-\newcommand{\tbr}[1]{\textcolor{DarkRed}{\textbf{#1}}}		%Bold red text
+\newcommand{\ve}{\textit}			%vernacular	/ target language text
+\newcommand{\tbr}{\textbf}		%Bold red text
 \newcommand{\tcb}{\textcolor{black}}	%black colour
 \renewcommand{\it}{\textit}	%italics
 \newcommand{\tsc}{\textsc}	%small caps
@@ -50,7 +47,7 @@
 \newcommand{\ny}{ɲ}					%palatal nasal -- enya = latin small letter n with left hook
 %\newcommand{\B}{\addfontfeature{StylisticSet=20} β} %voiced bilabial fricative
 \newcommand{\B}{β}	%voiced bilabial fricative
-\newcommand{\tbrtb}[2]{\textcolor{DarkRed}{\it{\tbf{#1}͡\tbf{#2}}}} %tiebar over two boldface, italic, maroon letters -- for some reason the tiebar over a boldface character in Linux Libertine displays as  breve over the first character
+\newcommand{\tbrtb}[2]{\it{\tbf{#1}͡\tbf{#2}}} %tiebar over two boldface, italic, maroon letters -- for some reason the tiebar over a boldface character in Linux Libertine displays as  breve over the first character
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Tables %% Tables %% Tables %% Tables %% Tables %%

@@ -1,3 +1,4 @@
+\usepackage{longtable}	%for multicolumn
 \usepackage{multicol}	%for multicolumn
 \usepackage{multirow}	%for multirow
 \usepackage[linguistics]{forest}	%for syntax trees
@@ -5,6 +6,7 @@
 	\newcommand{\xc}{\xcancel}
 \usepackage{rotating}	%rotate text (for phoneme charts)
 \usepackage{amsmath}
+\usepackage[shortcuts]{extdash} %to stop M-form (M\=/form breaking at the hyphen, but allowing other hyphented words to)
 \usepackage{hhline}
 \usepackage{subcaption}
 	\captionsetup[sub]{font=small}
@@ -84,13 +86,20 @@
 %%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\usepackage{chngcntr}
 %% to add additional information to the right of examples, uncomment the following line
 %\usepackage{langsci/styles/jambox}
 \usepackage{langsci/styles/langsci-optional}
 %\usepackage{langsci/styles/langsci-lgr}
 \usepackage{langsci/styles/langsci-glyphs}
 \usepackage{langsci/styles/langsci-gb4e}
-%\renewcommand{\exfont}{\itshape}
+	\let\eachwordone=\itshape
+	\nosinglegloss
+	\judgewidth{α:}
+	\counterwithin{exx}{chapter}							% reset example counter every chapter
+	\renewcommand{\exp}[1]{\exi{{(\ref{#1}′)}}}	% the pre-defined gb4e \exp command has $'$ which provides a prime symbol of a different font/size.
+																							% For consistency with other uses of the prime in my book (which are consistently ′ not $'$
+																							% I have redefined this here.
 
 \usepackage{pst-node}
 		\newcommand{\bxA}[1]{\rnode{A}{\psframebox[linewidth=0.4pt]{#1}}}			%node-A with box
@@ -101,16 +110,3 @@
 		\newcommand{\gp}{\hspace{0.32em}}	%space before gloss equivalent to gap greated by \psframebox
 
 \usepackage[english]{babel}
-
-% \usepackage{gb4e}
-	\let\eachwordone=\ve
-	\nosinglegloss
-	\judgewidth{α:}
-	%\counterwithin{xnumi}{chapter}	% add chapter number to example
-	\counterwithin{exx}{chapter}		% reset example counter every chapter
-	%\exewidth{(1.23)} % spacing
-
-% \usepackage[hang,flushmargin]{footmisc}
-% \setlength\footnotemargin{10pt}
-
- 
