@@ -33,6 +33,7 @@ main.snd: main.bbl
 	sed -i 's/.*Organization.*/\1/' main.adx
 	sed -i 's/.*Embassy.*/\1/' main.adx
 	sed -i 's/.*Association.*/\1/' main.adx
+	sed -i 's/\\MakeCapital//' main.adx
 	python3 fixindex.py
 	mv mainmod.adx main.adx
 	makeindex -o main.and main.adx
